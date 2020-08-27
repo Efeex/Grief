@@ -35,12 +35,12 @@ const AboutPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>Experience the unique Finnish home sauna.</h1>
+          <h1 className={css.pageTitle}>Just a group of handcrafted stylish people.</h1>
           <img className={css.coverImage} src={image} alt="My first ice cream." />
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
-              <p>Did you know that Finland has 3.2 million saunas - almost one sauna per person!</p>
+              <p>Here we put a sentence like did u know big companies trashes lots of clothes and are bad to heart?</p>
             </div>
 
             <div className={css.contentMain}>
@@ -58,7 +58,7 @@ const AboutPage = () => {
                 curious visitors to enter their sacred spaces.
               </p>
 
-              <h3 className={css.subtitle}>Are you a sauna owner?</h3>
+              <h3 className={css.subtitle}>Are you a creative person?</h3>
 
               <p>
                 Saunatime offers you a good way to earn some extra cash! If you're not using your

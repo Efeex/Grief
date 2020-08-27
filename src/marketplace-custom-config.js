@@ -85,19 +85,22 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'smoke', label: 'Smoke' },
-        { key: 'electric', label: 'Electric' },
-        { key: 'wood', label: 'Wood' },
-        { key: 'other', label: 'Other' },
+        { key: 'bottoms', label: 'Bottoms' },
+        { key: 'tops', label: 'Tops' },
+        { key: 'underwear', label: 'Underwear' },
+        { key: 'outerwear', label: 'Outerwear' },
+        { key: 'shoes', label: 'Shoes' },
+        { key: 'accessories', label: 'Accessories' },
+        { key: 'products', label: 'Products' },
       ],
     },
   },
   {
-    id: 'amenities',
-    label: 'Amenities',
+    id: 'customisation',
+    label: 'Customisation',
     type: 'SelectMultipleFilter',
     group: 'secondary',
-    queryParamNames: ['pub_amenities'],
+    queryParamNames: ['pub_customisation'],
     config: {
       // Optional modes: 'has_all', 'has_any'
       // https://www.sharetribe.com/api-reference/marketplace.html#extended-data-filtering
@@ -109,37 +112,43 @@ export const filters = [
       // to make filter customizations a bit easier.
       options: [
         {
-          key: 'towels',
-          label: 'Towels',
+          key: 'hand_paint',
+          label: 'Hand Paint',
         },
         {
-          key: 'bathroom',
-          label: 'Bathroom',
+          key: 'iron_patches',
+          label: 'Iron Patches',
         },
         {
-          key: 'swimming_pool',
-          label: 'Swimming pool',
+          key: 'embroidery',
+          label: 'Embroidery',
         },
         {
-          key: 'own_drinks',
-          label: 'Own drinks allowed',
+          key: 'tie_dye',
+          label: 'Tie Dye',
         },
         {
-          key: 'jacuzzi',
-          label: 'Jacuzzi',
+          key: 'homemade_print',
+          label: 'Homemade Print',
         },
-        {
-          key: 'audiovisual_entertainment',
-          label: 'Audiovisual entertainment',
-        },
-        {
-          key: 'barbeque',
-          label: 'Barbeque',
-        },
-        {
-          key: 'own_food_allowed',
-          label: 'Own food allowed',
-        },
+      ],
+    },
+  },
+  {
+    id: 'uniqueness',
+    label: 'Uniqueness',
+    type: 'SelectMultipleFilter',
+    group: 'secondary',
+    queryParamNames: ['pub_uniqueness'],
+    config: {
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'only_one', label: 'Only One' },
+        { key: 'limited_stock', label: 'Limited Stock' },
+        { key: 'on_demand', label: 'On Demand' },
       ],
     },
   },
